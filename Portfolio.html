@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Gevorkyan — Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/db6cd57731.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100" tabindex="0">
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- Download Confirm popup -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080;">
+    <div id="downloadToast" class="toast align-items-center text-white bg-success border-0" role="alert"
+      aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Resume downloaded successfully!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+          aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark myNavbar fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand myNavText" href="#">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavContent"
+        aria-controls="mainNavContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link myNavLinks active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#workExperience">Work Experience</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#skills">Technical Skills</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#interests">Interests & Achievments</a></li>
+          <li class="nav-item"><a class="nav-link myNavLinks" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-navbar">
+    <div class="container py-5">
+
+      <!-- Hero -->
+      <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center text-center py-5"
+        style="height: 72vh">
+        <h1 class="glow display-4">Hi, I'm David Gevorkyan</h1>
+        <h3 class="glow lead mt-3">I'm a computer science student</h3>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="aboutMe py-5">
+        <div class="text-center mb-4">
+          <h1 class="glow">About Me</h1>
+          <p class="glowLine"><b>___________________________</b></p>
+        </div>
+
+        <div class="row align-items-stretch gx-4 gy-4 aboutMeContainer">
+          <!-- left side -->
+          <div class="col-12 col-lg-4">
+            <div class="card transparentCard profileCard h-100">
+              <div class="card-body d-flex flex-column align-items-center">
+                <img src="images/ProfilePic.jpeg" class="profileImg mb-3" alt="Profile picture">
+                <h3 class="glow mb-1">David Gevorkyan</h3>
+                <h5 class="glow mb-3">Computer Science student</h5>
+                <div class="w-100 d-flex flex-column align-items-center mt-auto">
+                  <button class="btn bigButton mb-2 w-75 d-flex justify-content-center align-items-center gap-2"
+                    id="downloadButton">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- right side -->
+          <div class="col-12 col-lg-8">
+            <div class="card transparentCard box mb-4">
+              <div class="card-body">
+                <h3 class="glow" style="text-align: left;">Profile</h3>
+                <p class="paragraph">
+                  I’m a driven and enthusiastic final-year Computer Science student at Technological University Dublin.
+                  I thrive in environments where I can combine strong communication, good judgment, and a passion for
+                  delivering great experiences — whether in customer service or software development. I’m looking for an
+                  opportunity to apply my skills, grow professionally, and contribute to meaningful projects. Outside of
+                  academics, I enjoy game development, web development, chess, and exploring all things related to
+                  space.
+                </p>
+              </div>
+            </div>
+
+            <!-- info grid -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 infoGridContainer">
+              <div class="col">
+                <div class="card infoCard h-100 d-flex align-items-center">
+                  <div class="d-flex w-100 align-items-center">
+                    <div class="infoIcon me-3"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="infoText">
+                      <h5>DEGREE</h5>
+                      <p>Bachelor of Science</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card infoCard h-100 d-flex align-items-center">
+                  <div class="d-flex w-100 align-items-center">
+                    <div class="infoIcon me-3"><i class="fa-solid fa-suitcase"></i></div>
+                    <div class="infoText">
+                      <h5>EXPERIENCE</h5>
+                      <p>2 months Internship</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card infoCard h-100 d-flex align-items-center">
+                  <div class="d-flex w-100 align-items-center">
+                    <div class="infoIcon me-3"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div class="infoText">
+                      <h5>AVAILABILITY</h5>
+                      <p>Available to Work</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card infoCard h-100 d-flex align-items-center">
+                  <div class="d-flex w-100 align-items-center">
+                    <div class="infoIcon me-3"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="infoText">
+                      <h5>BASED IN</h5>
+                      <p>Dublin, IE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card infoCard h-100 d-flex align-items-center">
+                  <div class="d-flex w-100 align-items-center">
+                    <div class="infoIcon me-3"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="infoText">
+                      <h5>Email</h5>
+                      <p>davogevo0416@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card infoCard h-100 d-flex align-items-center">
+                  <div class="d-flex w-100 align-items-center">
+                    <div class="infoIcon me-3"><i class="fa-solid fa-mobile"></i></div>
+                    <div class="infoText">
+                      <h5>Phone</h5>
+                      <p>+353 85 868 6210</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="education py-5">
+        <div class="text-center mb-4">
+          <h1 class="glow">Education</h1>
+          <p class="glowLine"><b>___________________________</b></p>
+        </div>
+
+        <div class="row educationContainer gx-4 gy-4 align-items-start">
+          <div class="col-12 col-lg-3">
+            <div class="timeline">
+              <img src="images/Education.png" class="eduIcon mb-3" alt="">
+              <div class="timelineLine"></div>
+              <img src="images/GlowStar.png" class="eduIcon mb-3" style="width: 70px;" alt="">
+              <div class="timelineLine"></div>
+              <img src="images/GlowStar.png" class="eduIcon" style="width: 90px;" alt="">
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <div class="row row-cols-1 row-cols-md-1 g-3">
+              <!-- TUD -->
+              <div class="col">
+                <div class="card box transparentCard">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="dateRange mb-0">2025 - 2026</p>
+                      <p class="glow mb-0">BACHELOR</p>
+                    </div>
+                    <h3 class="glow mt-3">Computer Science</h3>
+                    <h5 class="glow ">Technological University Dublin</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- NCI -->
+              <div class="col">
+                <div class="card box transparentCard">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="dateRange mb-0">2023 - 2025</p>
+                      <p class="glow mb-0">BACHELOR</p>
+                    </div>
+                    <h3 class="glow mt-3">Computer Science</h3>
+                    <h5 class="glow">National College of Ireland</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Shirakatsy -->
+              <div class="col">
+                <div class="card box transparentCard">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="dateRange mb-0">2010 - 2022</p>
+                      <p class="glow mb-0">INTERNATIONAL BACCALAUREATE WITH HONOR</p>
+                    </div>
+                    <h3 class="glow mt-3">Primary and Secondary Education</h3>
+                    <h5 class="glow">Anania Shirakatsy Lyceum</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects py-5">
+        <div class="text-center mb-4">
+          <h1 class="glow">Projects</h1>
+          <p class="glowLine"><b>___________________________</b></p>
+        </div>
+
+        <div class="row projectsContainer gx-4 gy-4 justify-content-center">
+          <!-- SkyRoute -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card projectCard w-100">
+              <img src="images/SkyRoute.png" class="card-img-top projectImg" alt="SkyRoute">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title glow">SkyRoute</h5>
+                <p class="paragraph mt-1">
+                  This project is a responsive, interactive web application that features route planning with
+                  weather-aware navigation, allowing users to plan trips while considering current weather conditions.
+                </p>
+
+                <div class="d-flex justify-content-between mt-auto align-items-center">
+                  <div class="d-flex gap-2">
+                    <span class="glow techStackItem">React</span>
+                    <span class="glow techStackItem">JavaScript</span>
+                    <span class="glow techStackItem">Mongo DB</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="projectIcon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="projectIcon"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PerfectPitch -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card projectCard w-100">
+              <img src="images/PerfectPitch.png" class="card-img-top projectImg" alt="PerfectPitch">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title glow">PerfectPitch</h5>
+                <p class="paragraph mt-1">
+                  A Web-based pitch detection service made to be a part of a college group project. Made using VSCode
+                  and
+                  Notepad++.
+                </p>
+
+                <div class="d-flex justify-content-between mt-auto align-items-center">
+                  <div class="d-flex gap-2">
+                    <span class="glow techStackItem">JavaScript</span>
+                    <span class="glow techStackItem">HTML</span>
+                    <span class="glow techStackItem">CSS</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="projectIcon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="projectIcon"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Calculator -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card projectCard w-100">
+              <img src="images/Calculator.png" class="card-img-top projectImg" alt="Java Calculator">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title glow">Java Calculator</h5>
+                <p class="paragraph mt-1">
+                  A simple chess app which core feature is going to be a homemade chess bot that you can play against.
+                </p>
+
+                <div class="d-flex justify-content-between mt-auto align-items-center">
+                  <div class="d-flex gap-2">
+                    <span class="glow techStackItem">Java</span>
+                    <span class="glow techStackItem">Swing</span>
+                  </div>
+                  <div class="d-flex gap-3">
+                    <a href="#" class="projectIcon"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="workExperience" class="workExperience py-5">
+        <div class="text-center mb-4">
+          <h1 class="glow">Work Experience</h1>
+          <p class="glowLine"><b>___________________________</b></p>
+        </div>
+
+        <div class="row educationContainer gx-4 gy-4 align-items-start">
+          <div class="col-12 col-lg-3">
+            <div class="timeline">
+              <img src="images/Experience.png" class="eduIcon mb-3" alt="">
+              <div class="timelineLine"></div>
+              <img src="images/GlowStar.png" class="eduIcon mb-3" style="width: 90px;" alt="">
+              <div class="timelineLine"></div>
+              <img src="images/GlowStar.png" class="eduIcon" style="width: 70px;" alt="">
+            </div>
+          </div>
+           <!-- BDO -->
+          <div class="col-12 col-lg-9">
+            <div class="row row-cols-1 row-cols-md-1 g-3">
+              <div class="col">
+                <div class="card box transparentCard">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p class="dateRange mb-0">2025 Feb - Mar</p>
+                      <p class="glow mb-0">INTERNSHIP</p>
+                    </div>
+                    <h3 class="glow mt-3">IT Help Desk Engineer</h3>
+                    <h5 class="glow">BDO Ireland</h5>
+                  </div>
+                </div>
+              </div>
+               <!-- Circle K -->
+              <div class="col">
+                <div class="card box transparentCard">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p class="dateRange mb-0">2025 September</p>
+                      <p class="glow mb-0">PART TIME</p>
+                    </div>
+                    <h3 class="glow mt-3">Retail Assistant</h3>
+                    <h5 class="glow">Circle K</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Dublin Chess Club -->
+              <div class="col">
+                <div class="card box transparentCard">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <p class="dateRange mb-0">2024 Oct - 2025 Jun</p>
+                      <p class="glow mb-0">FLEXITIME</p>
+                    </div>
+                    <h3 class="glow mt-3">Assistant Chess Instructor</h3>
+                    <h5 class="glow">Dublin Chess club</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="projects py-5">
+        <div class="text-center mb-4">
+          <h1 class="glow">Technical Skills</h1>
+          <p class="glowLine"><b>___________________________</b></p>
+        </div>
+
+        <div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner mt-2">
+
+            <!-- Frontend -->
+            <div class="carousel-item active mt-3">
+              <div class="d-flex justify-content-center h-100">
+                <div class="card projectCard w-75 h-100">
+                  <div class="card-body d-flex flex-column h-100">
+                    <h1 class="card-title glow">
+                      <i class="fa-solid fa-laptop-code me-2"></i> Frontend
+                    </h1>
+                    <div class="row g-3 mt-3 h-100">
+
+                      <!-- HTML -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-html5 mb-1"></i>
+                          <strong>HTML</strong>
+                          <small class="text-center mt-1">Semantic markup, forms, tables, accessibility</small>
+                        </div>
+                      </div>
+
+                      <!-- CSS -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-css3-alt mb-1"></i>
+                          <strong>CSS</strong>
+                          <small class="text-center mt-1">Flexbox, Grid, animations, responsive design</small>
+                        </div>
+                      </div>
+
+                      <!-- JS -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-js mb-1"></i>
+                          <strong>JavaScript</strong>
+                          <small class="text-center mt-1">DOM manipulation, ES6+, fetch API, event handling</small>
+                        </div>
+                      </div>
+
+                      <!-- React -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-react mb-1"></i>
+                          <strong>React</strong>
+                          <small class="text-center mt-1">Components, hooks, state management, routing</small>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="carousel-item mt-3">
+              <div class="d-flex justify-content-center h-100">
+                <div class="card projectCard w-75 h-100">
+                  <div class="card-body d-flex flex-column h-100">
+                    <h1 class="card-title glow">
+                      <i class="fa-solid fa-server me-2"></i> Backend
+                    </h1>
+                    <div class="row g-3 mt-3 h-100">
+
+                      <!-- Node -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-node-js mb-1"></i>
+                          <strong>Node.js</strong>
+                          <small class="text-center mt-1">REST APIs, Express.js, server-side logic</small>
+                        </div>
+                      </div>
+
+                      <!-- MongoDB -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-database mb-1"></i>
+                          <strong>MongoDB</strong>
+                          <small class="text-center mt-1">NoSQL databases, schema design, queries, aggregation</small>
+                        </div>
+                      </div>
+
+                      <!-- Java -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-java mb-1"></i>
+                          <strong>Java</strong>
+                          <small class="text-center mt-1">OOP, multithreading, data structures, algorithms</small>
+                        </div>
+                      </div>
+
+                      <!-- Python -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-python mb-1"></i>
+                          <strong>Python</strong>
+                          <small class="text-center mt-1">Scripting, data analysis, automation</small>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Other -->
+            <div class="carousel-item mt-3">
+              <div class="d-flex justify-content-center h-100">
+                <div class="card projectCard w-75 h-100">
+                  <div class="card-body d-flex flex-column h-100">
+                    <h1 class="card-title glow">
+                      <i class="fa-solid fa-toolbox me-2"></i> Tools & Other
+                    </h1>
+                    <div class="row g-3 mt-3 h-100">
+
+                      <!-- Git -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-git-alt mb-1"></i>
+                          <strong>Git</strong>
+                          <small class="text-center mt-1">Version control, branching, merging, pull requests</small>
+                        </div>
+                      </div>
+
+                      <!-- GitHub -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-brands fa-github mb-1"></i>
+                          <strong>GitHub</strong>
+                          <small class="text-center mt-1">Repositories, collaboration, issues, CI/CD workflows</small>
+                        </div>
+                      </div>
+
+                      <!-- VS Code -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-code mb-1"></i>
+                          <strong>VS Code</strong>
+                          <small class="text-center mt-1">Extensions, debugging, code formatting, workspace management</small>
+                        </div>
+                      </div>
+
+                      <!-- CLI -->
+                      <div class="col-6 d-flex">
+                        <div class="skillItem flex-column d-flex align-items-center justify-content-center">
+                          <i class="fa-solid fa-terminal mb-1"></i>
+                          <strong>CLI</strong>
+                          <small class="text-center mt-1">Terminal commands, scripting, file management, automation</small>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Interests & Achievements -->
+      <section id="interests" class="projects py-5">
+        <div class="text-center mb-4">
+          <h1 class="glow">Interests & Achievements</h1>
+          <p class="glowLine"><b>___________________________</b></p>
+        </div>
+
+        <div class="row projectsContainer gx-4 gy-4 justify-content-center">
+
+          <!-- Chess -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card projectCard w-100">
+              <img src="images/DublinChessClub.jpeg" class="card-img-top projectImg" alt="Chess">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title glow">Chess</h5>
+                <p class="paragraph mt-1">
+                  • Member of 
+                  <span 
+                    class="highlighted-text"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Dublin Chess Club is the oldest chess club in Ireland - founded in 1867 ">
+                    Dublin Chess Club
+                  </span><br>
+                  • 
+                  <span 
+                    class="highlighted-text"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Leinster League is a chess tournament organized by Leinster Chess Union which is the body responsible for promoting and organising chess in the Province of Leinster, Ireland.">
+                    Leinster league
+                  </span>
+                  winner<br>
+                  • 
+                  <span 
+                    class="highlighted-text"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="The Challengers Section of the annual Gonzaga Charity Chess Classic, a popular Irish chess tournament held at Gonzaga College in Dublin">
+                    Gonzaga Challangers
+                  </span>
+                   tournament winner<br>
+                  • Dublin Chess Club summer tournament winner
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Math & Science -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card projectCard w-100">
+              <img src="images/Kangaroo.jpg" class="card-img-top projectImg" alt="Math & Science">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title glow">Math & Science</h5>
+                <p class="paragraph mt-1">
+                  • Participated in math and science Olympiads<br>
+                  • 
+                  <span 
+                    class="highlighted-text"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="The International Mathematical Olympiad (IMO) is an annual mathematics olympiad for students younger than 20. Each year, participating countries their best 6 students. The selection process involves several rounds of competition, each progressively more difficult, after which the number of candidates is repeatedly reduced until the final 6 are chosen.">
+                    International math Olympiad
+                  </span>
+                   (first 2 stages)<br>
+                  • 
+                  <span 
+                    class="highlighted-text"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Mathematical Kangaroo is an international mathematics competition in over 89 countries. There are six levels of participation, ranging from grade 1 to grade 12.">
+                    Kangaroo Math Olympiad
+                  </span><br>
+                  • Local school Math and Science Olympiads
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game Development -->
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <div class="card projectCard w-100">
+              <img src="images/Game.png" class="card-img-top projectImg" alt="Game Development">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title glow">Game Development</h5>
+                <p class="paragraph mt-1">
+                  • Working on personal 2D and 3D game projects<br>
+                  • Making custom music for my games<br>
+                  • Planning to release a full fledged game on Steam<br>
+                  • Planning to participate in a 
+                  <span 
+                    class="highlighted-text"
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="A game jam is an event where participants try to make a video game from scratch. While many game jams are run purely as a exercise, some game jams are contests that offer prizes. Some submissions were eventually released as fully-developed games.">
+                    Game Jam
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contact" class="contact d-flex flex-column justify-content-center align-items-center text-center py-5"
+        style="height: 72vh">
+        <h1 class="glow display-4">Contact Me</h1>
+
+        <!-- Floating Icons -->
+        <div class="social-links" aria-hidden="true">
+          <a href="https://www.linkedin.com/in/gevorgyandavid/" class="starLink link-linkedin"><img class="icon"
+              src="images/LinkedIn.png" alt="LinkedIn"></a>
+          <a href="https://github.com/Davo0416" class="starLink link-github"><img class="icon" src="images/Github.png"
+              alt="Github"></a>
+          <a href="mailto:davogevo0416@gmail.com" class="starLink link-mail"><img class="icon" src="images/Mail.png"
+              alt="Mail"></a>
+          <a href="tel:+353858686210" class="starLink link-phone"><img class="icon" src="images/Phone.png"
+              alt="Phone"></a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="javascript.js"></script>
+  <script src="starScatter.js"></script>
+</body>
+
+</html>
